@@ -11,14 +11,14 @@ galleryRef.addEventListener("click", onImgClick);
 
 function createGalleryMarkup(galleryItems) {
   return galleryItems
-    .map(({ preview, original, descrption }) => {
+    .map(({ preview, original, description }) => {
       return `<div class="gallery__item">
     <a class="gallery__link" href="${original}">
       <img
         class="gallery__image"
         src="${preview}"
         data-source="${original}"
-        alt="${descrption}"
+        alt="${description}"
       />
     </a>
   </div>`;
